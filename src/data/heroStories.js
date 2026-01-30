@@ -3,7 +3,7 @@ const heroStories = [
     id: 1,
     title: 'Everest Base Camp',
     subtitle: 'Everest | Nepal',
-    image: 'https://ik.imagekit.io/2x1rpp2vh/Everest_Base_Camp',
+    image: 'https://ik.imagekit.io/2x1rpp2vh/everest-base-camp',
     link: '/packages/everest-base-camp-trek',
   },
   {

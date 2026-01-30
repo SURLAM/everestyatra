@@ -104,7 +104,7 @@ export default function HeroInformatics() {
           {/* RIGHT — IMAGE */}
           <div className=" relative w-full  h-125 md:h-125 lg:h-135 transition-transform duration-400 ease-out hover:scale-110 ">
             <Image
-              src="https://ik.imagekit.io/2x1rpp2vh/Everest_Base_Camp"
+              src="https://ik.imagekit.io/2x1rpp2vh/everest-base-camp"
               alt="Himalayan Trekking Nepal"
               fill
               className="object-cover rounded"

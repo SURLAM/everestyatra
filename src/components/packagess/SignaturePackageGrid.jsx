@@ -56,7 +56,7 @@ const packages = [
   {
     title: "Everest Base Camp ",
     price: 4999,
-    image: "https://ik.imagekit.io/2x1rpp2vh/Everest_Base_Camp",
+    image: "https://ik.imagekit.io/2x1rpp2vh/everest-base-camp",
     link: "/packages/everest-base-camp-trek",
     limited: true,
     duration: "14 Nights / 15 Days",
