@@ -1,20 +1,61 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@keyframes storyProgress {
+  from {
+    width: 0%;
+  }
+
+  to {
+    width: 100%;
+  }
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+.animate-story-progress {
+  animation: storyProgress 6s linear infinite;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+:root {
+  --background: #0A192C;
+  --foreground: #0A192C;
+}
+
+
+@keyframes storyProgress {
+  from {
+    width: 0%;
+  }
+
+  to {
+    width: 100%;
+  }
+}
+
+.animate-story-progress {
+  animation: storyProgress 6s linear infinite;
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(100%);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
+
+.animate-slideUp {
+  animation: slideUp 0.35s ease-out;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #0B192C;
     --foreground: #ededed;
   }
 }
@@ -23,4 +64,63 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.lux-field {
+  position: relative;
+}
+
+.lux-input {
+  width: 100%;
+  padding: 18px 14px;
+  background: linear-gradient(180deg, rgba(12, 20, 35, 0.9), rgba(6, 12, 20, 0.95));
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 10px;
+  color: white;
+  outline: none;
+  transition: all 0.35s ease;
+}
+
+.lux-input::placeholder {
+  color: transparent;
+}
+
+.lux-field label {
+  position: absolute;
+  left: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.45);
+  background: #061421;
+  padding: 0 6px;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+
+.lux-input:focus+label,
+.lux-input:not(:placeholder-shown)+label {
+  top: -6px;
+  font-size: 11px;
+  color: #f7d38a;
+}
+
+.lux-input:focus {
+  border-color: rgba(247, 211, 138, 0.9);
+  box-shadow:
+    0 0 0 1px rgba(247, 211, 138, 0.6),
+    0 0 28px rgba(247, 200, 120, 0.45);
+}
+
+input[type="date"] {
+  color: white;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+  opacity: 0.85;
 }
