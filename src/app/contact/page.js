@@ -48,39 +48,47 @@ export default function ContactPage() {
   const [toast, setToast] = useState(false);
 
   const handleSubmit = async (e) => {
-    e.preventDefault();
-    setLoading(true);
+  e.preventDefault();
+  setLoading(true);
 
-    try {
-      await fetch("/api/contact", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(form),
-      });
+  try {
+    const res = await fetch("/api/contact", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(form),
+    });
 
-      setToast(true);
+    const data = await res.json();
 
-      setForm({
-        name: "",
-        email: "",
-        phone: "",
-        country: "",
-        pax: 1,
-        startDate: null,
-        endDate: null,
-        message: "",
-      });
-
-      setTimeout(() => {
-        setToast(false);
-        router.push("/");
-      }, 1800);
-    } catch (err) {
-      console.error(err);
-    } finally {
-      setLoading(false);
+    if (!res.ok) {
+      throw new Error(data.error || "Failed to send");
     }
-  };
+
+    setToast(true);
+
+    setForm({
+      name: "",
+      email: "",
+      phone: "",
+      country: "",
+      pax: 1,
+      startDate: null,
+      endDate: null,
+      message: "",
+    });
+
+    setTimeout(() => {
+      setToast(false);
+      router.push("/");
+    }, 1800);
+  } catch (err) {
+    alert("❌ Email failed: " + err.message);
+    console.error(err);
+  } finally {
+    setLoading(false);
+  }
+};
+
 
   return (
     <section className="bg-[#061421] text-white lg:min-h-screen lg:grid lg:grid-cols-2">
