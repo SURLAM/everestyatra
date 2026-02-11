@@ -44,7 +44,6 @@ const journey = [
 ];
 
 const reviews = [
- 
   {
     quote:
       "Everything felt intentional. The calm professionalism allowed us to fully absorb the Himalayas.",
@@ -179,17 +178,21 @@ export default function JourneyTrustExcellence() {
             href="/contact"
             className="
               inline-flex items-center gap-4 sm:gap-5
-          px-8 py-3
+          px-9 py-4
               rounded-full
-              border border-[#D6B36A]/20
-              text-[#D6B36A]/90
-              tracking-wide
-              hover:bg-[#D6B36A]
-              hover:text-[#061421]
-              hover:border-[#D6B36A]
-              hover:shadow-lg
-              hover:font-medium
+              
+              text-black/70
               text-sm
+           
+              bg-[#D6B36A]
+              font-semibold
+              hover:border border-yellow-400
+              hover:bg-transparent
+              hover:text-white
+            
+              hover:shadow-lg
+          
+              hover:scale-105
             
               transition-all duration-300
             "

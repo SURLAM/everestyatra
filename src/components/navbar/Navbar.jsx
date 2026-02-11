@@ -2,6 +2,7 @@
 
 import { useState, useRef, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 import {
   Menu,
@@ -35,15 +36,15 @@ export default function Navbar() {
       <header className="fixed top-0 left-0 w-full h-16 md:h-18 z-9999 bg-[#0B1C2D] isolate">
         <div className="max-w-7xl mx-auto py-6 px-6  h-full flex items-center justify-between ">
           {/* LOGO */}
-          <Link
-            href="/"
-            className="text-lg   text-yellow-500   font-serif  font-semibold lg:font-stretch-extra-condensed hover:text-yellow-400 5 flex flex-items-center "
-          >
-            <Mountain
-              size={25}
-              className="inline-block text-yellow-500 hover:text-yellow-400 stroke-2 mr-1 "
+          <Link href="/" className="flex items-center">
+            <Image
+              src="/everestyatralogo.svg"
+              alt="EVERESTYATRA Logo"
+              width={160}
+              height={50}
+              priority
+              className="h-auto w-40 lg:w-50"
             />
-            EVERESTYATRA
           </Link>
 
           {/* ================= DESKTOP MENU ================= */}

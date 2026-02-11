@@ -3,7 +3,7 @@ export const metadata = {
   description:
     "Explore Everest, Annapurna and beyond with expertly crafted luxury trekking and holiday experiences in Nepal.",
      icons: {
-    icon: "/Nepal-logo.svg",
+    icon: "og/title.png",
  
   },
 

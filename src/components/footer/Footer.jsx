@@ -1,24 +1,24 @@
 import Link from "next/link";
 import { Mountain, SquareArrowOutUpRight } from "lucide-react";
+import Image from "next/image";
 
 export default function Footer() {
   return (
     <footer className="bg-[#061422]  text-gray-300/80  border-t border-white/15 ">
       <div className=" max-w-4xl mx-auto  lg:py-15 py-10  grid grid-cols-1 md:grid-cols-3 lg:gap-30 gap-10 lg:px-15 px-10 ">
         <div>
-          <Link
-            href="/"
-            className="group inline-flex items-center justify-center  gap-1  text-yellow-500 text-lg tracking-tight hover:text-yellow-400 transition-all hover:translate-y-1 font-serif font-semibold md:font-stretch-extra-condensed hover:font-stretch-extra-condensed mt-15 "
-          >
-            <Mountain size={26} />
-            EVERESTYATRA{" "}
-            <SquareArrowOutUpRight
-              size={20}
-              className="inline-block hover:translate-y-1 text-yellow-400"
+          <Link href="/" className="flex items-center">
+            <Image
+              src="/everestyatralogo.svg"
+              alt="EVERESTYATRA Logo"
+              width={160}
+              height={50}
+              priority
+              className="h-auto w-40 "
             />
           </Link>
 
-          <p className=" mt-2 text-sm text-gray-400">Explore Nepal With Us.</p>
+          <p className=" mt-5 lg:mt-2 text-sm text-gray-400">Explore Nepal With Us.</p>
           <p className=" mb-3  text-sm text-gray-400">
             Nature | Culture | Adventure
           </p>

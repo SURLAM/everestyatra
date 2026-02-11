@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 export default function Loader() {
   return (
     <motion.div
-      className="fixed inset-0 `z-9999` flex items-center justify-center bg-[#020f26]"
+      className="fixed inset-0 `z-9999` flex items-center justify-center bg-[#020b1b]"
       initial={{ opacity: 1 }}
       exit={{ opacity: 0 }}
       transition={{ duration: 0.6, ease: "easeInOut" }}

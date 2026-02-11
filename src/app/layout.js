@@ -9,8 +9,10 @@ export const metadata = {
   metadataBase: new URL("https://everestyatra.com"),
 
   title: {
-    default: "Everest Yatra  | Luxury Trekking & Tours in Nepal",
+    default: "Everest Yatra  |  Luxury Trekking & Tours in Nepal",
     template: "%s | Everestyatra Nepal",
+     icon: "og/title.png",
+ 
   },
 
   description:

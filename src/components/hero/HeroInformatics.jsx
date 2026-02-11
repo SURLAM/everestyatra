@@ -36,13 +36,8 @@ export default function HeroInformatics() {
             </span>{" "}
           </p>
 
-          <h2 className=" text-indigo-100/80 text-center text-6xl leading-tightest font-serif font-bold lg:tracking-tight lg:mt-5 px-0">
-            <span className="text-yellow-500/90 font-serif text-8xl">Ꜫ</span>
-            VEREST🇳🇵
-            <span className="text-yellow-500/90 font-black text-8xl">Ո</span>
-            <span className="text-yellow-400/80 font-serif text-6xl font-bold">
-              EPAL
-            </span>
+          <h2 className=" text-indigo-100/80 text-center text-4xl md:text-6xl lg:text-7xl leading-tightest font-serif font-bold transformlg:tracking-tight lg:mt-5 px-0">
+            EVEREST  NEPAL
           </h2>
           <div className="mt-18 h-px w-4/12 mx-auto bg-linear-to-r from-transparent via-[#D6B36A]/70 to-transparent" />
           <p className=" lg:my-10 my-5 p-10 rounded-2xl lg:px-15 lg:max-w-2xl md:max-w-lg mx-auto text-sm text-gray-200/80 leading-relaxed px-6 font-light">

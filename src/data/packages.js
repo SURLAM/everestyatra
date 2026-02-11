@@ -611,7 +611,7 @@ const packages = [
     gallery: [
       {
         image:
-          "https://ik.imagekit.io/2x1rpp2vh/548642872_122098939911022665_6839028596103786607_n.jpg?updatedAt=1767245240960",
+          "https://ik.imagekit.io/2x1rpp2vh/548642872_122098939911022665_6839028596103786607_n.jpg",
         title: "Beautiful Khumai",
         subtitle: "Fishtail Mountain",
       },
